@@ -1,0 +1,97 @@
+.wrapper
+{
+    display: flex;
+    flex-direction: row;
+    width: 900px;
+    height: 200px;
+}
+
+.wrapper > .strobe
+{
+    width: 200rem;
+    height: 900px;
+    background-color: rgb(238, 237, 237);
+}
+
+.wrapper .strobe:nth-child(1)
+{
+    top: 0;
+    left: 0;
+    border-right: 2px dotted greenyellow
+}
+
+.strobe:hover
+{
+    animation: strobes 1s 2;
+    background-color: yellow;
+    
+}
+
+@keyframes strobes
+{
+    0%{
+        background-color: rgb(238, 237, 237);
+    }
+    100%{
+        background-color: yellow;
+    }
+}
+
+.wrapper .strobe:nth-child(2)
+{
+    top: 0;
+    left: 100px;
+    
+}
+
+.wrapper .strobe:nth-child(3)
+{
+    top: 0;
+    left: 200px;
+    border-left: 2px dotted greenyellow;
+}
+
+.wrapper .strobe:nth-child(4)
+{
+    top: 0;
+    left: 300px;
+    border-left: 2px dotted greenyellow;
+}
+.strobe:nth-child(4):hover
+{
+    animation: mainblue 0.75s  infinite;
+    background-color: rgb(238, 237, 237);
+    
+}
+@keyframes mainblue
+{
+    0%{
+        background-color: rgb(238, 237, 237);
+    }
+    100%{
+        background-color: yellow;
+    }
+}
+
+.wrapper .strobe:nth-child(5)
+{
+    top: 0;
+    left: 400px;
+    border-left: 2px dotted greenyellow;
+}
+
+.strobe:nth-child(5):hover
+{
+    animation: mainblue 0.5s infinite;
+    background-color: rgb(238, 237, 237);
+    
+}
+@keyframes mainblue
+{
+    0%{
+        background-color: rgb(238, 237, 237);
+    }
+    100%{
+        background-color: yellow;
+    }
+}
